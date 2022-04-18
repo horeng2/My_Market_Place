@@ -1,0 +1,17 @@
+# Git URL : https://github.com/realm/SwiftLint
+# Reference : https://realm.github.io/SwiftLint/index.html
+
+disabled_rules:
+
+opt_in_rules:
+    - empty_count
+    - empty_string
+excluded:
+    - Pods
+    - My_Market_Place/AppDelegate.swift
+    - My_Market_Place/SceneDelegate.swift
+identifier_name:
+    min_length:
+        error: 2
+    excluded:
+        - to
