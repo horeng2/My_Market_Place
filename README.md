@@ -36,6 +36,10 @@
 - multipart/form-data
 - NSCache
 
+
+
+---
+# 진행 계획
 ## Step 1: UML작성 및 필요 기능 문서화
 ## Step 2: Unit Test 구현
 ## Step 3: 모델 타입 구현
