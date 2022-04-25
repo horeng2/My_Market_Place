@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		483DEE80280D94FA00EBF77B /* My_Market_Place_Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 483DEE7F280D94FA00EBF77B /* My_Market_Place_Tests.swift */; };
+		484413872816844C005ADDB3 /* ProductListRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 484413862816844C005ADDB3 /* ProductListRequest.swift */; };
+		4844138928168463005ADDB3 /* ProductList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4844138828168463005ADDB3 /* ProductList.swift */; };
+		4844138B2816846C005ADDB3 /* ProductPreview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4844138A2816846C005ADDB3 /* ProductPreview.swift */; };
+		4844138D281686DB005ADDB3 /* Currency.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4844138C281686DB005ADDB3 /* Currency.swift */; };
 		48C13014280D8E1D005835EE /* .swiftlint.yml in Resources */ = {isa = PBXBuildFile; fileRef = 48C13013280D8E1D005835EE /* .swiftlint.yml */; };
 		48CB5549280D869F002C8676 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48CB5548280D869F002C8676 /* AppDelegate.swift */; };
 		48CB554B280D869F002C8676 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48CB554A280D869F002C8676 /* SceneDelegate.swift */; };
@@ -32,6 +36,10 @@
 		148EE5E24E2E5D074762F05A /* Pods-My_Market_Place.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-My_Market_Place.release.xcconfig"; path = "Target Support Files/Pods-My_Market_Place/Pods-My_Market_Place.release.xcconfig"; sourceTree = "<group>"; };
 		483DEE7D280D94FA00EBF77B /* My_Market_Place_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = My_Market_Place_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		483DEE7F280D94FA00EBF77B /* My_Market_Place_Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = My_Market_Place_Tests.swift; sourceTree = "<group>"; };
+		484413862816844C005ADDB3 /* ProductListRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductListRequest.swift; sourceTree = "<group>"; };
+		4844138828168463005ADDB3 /* ProductList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductList.swift; sourceTree = "<group>"; };
+		4844138A2816846C005ADDB3 /* ProductPreview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductPreview.swift; sourceTree = "<group>"; };
+		4844138C281686DB005ADDB3 /* Currency.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Currency.swift; sourceTree = "<group>"; };
 		48C13013280D8E1D005835EE /* .swiftlint.yml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = .swiftlint.yml; sourceTree = "<group>"; };
 		48CB5545280D869F002C8676 /* My_Market_Place.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = My_Market_Place.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		48CB5548280D869F002C8676 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -81,6 +89,65 @@
 			path = My_Market_Place_Tests;
 			sourceTree = "<group>";
 		};
+		4844137F28168316005ADDB3 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				4844138028168321005ADDB3 /* Common */,
+				4844138128168328005ADDB3 /* ProductList */,
+				4844138228168334005ADDB3 /* RegistProduct */,
+				484413832816833E005ADDB3 /* ModifyProduct */,
+				4844138428168349005ADDB3 /* Secret */,
+				4844138528168354005ADDB3 /* DeleteProduct */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		4844138028168321005ADDB3 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				4844138C281686DB005ADDB3 /* Currency.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		4844138128168328005ADDB3 /* ProductList */ = {
+			isa = PBXGroup;
+			children = (
+				484413862816844C005ADDB3 /* ProductListRequest.swift */,
+				4844138828168463005ADDB3 /* ProductList.swift */,
+				4844138A2816846C005ADDB3 /* ProductPreview.swift */,
+			);
+			path = ProductList;
+			sourceTree = "<group>";
+		};
+		4844138228168334005ADDB3 /* RegistProduct */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = RegistProduct;
+			sourceTree = "<group>";
+		};
+		484413832816833E005ADDB3 /* ModifyProduct */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ModifyProduct;
+			sourceTree = "<group>";
+		};
+		4844138428168349005ADDB3 /* Secret */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Secret;
+			sourceTree = "<group>";
+		};
+		4844138528168354005ADDB3 /* DeleteProduct */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = DeleteProduct;
+			sourceTree = "<group>";
+		};
 		48CB553C280D869F002C8676 = {
 			isa = PBXGroup;
 			children = (
@@ -105,6 +172,7 @@
 		48CB5547280D869F002C8676 /* My_Market_Place */ = {
 			isa = PBXGroup;
 			children = (
+				4844137F28168316005ADDB3 /* Model */,
 				48CB5548280D869F002C8676 /* AppDelegate.swift */,
 				48CB554A280D869F002C8676 /* SceneDelegate.swift */,
 				48CB554C280D869F002C8676 /* ViewController.swift */,
@@ -279,7 +347,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				48CB554D280D869F002C8676 /* ViewController.swift in Sources */,
+				4844138928168463005ADDB3 /* ProductList.swift in Sources */,
+				4844138B2816846C005ADDB3 /* ProductPreview.swift in Sources */,
+				484413872816844C005ADDB3 /* ProductListRequest.swift in Sources */,
 				48CB5549280D869F002C8676 /* AppDelegate.swift in Sources */,
+				4844138D281686DB005ADDB3 /* Currency.swift in Sources */,
 				48CB554B280D869F002C8676 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
