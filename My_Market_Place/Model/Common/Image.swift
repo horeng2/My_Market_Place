@@ -17,7 +17,7 @@ struct Image: Codable {
     private enum CodingKeys: String, CodingKey {
         case number
         case url
-        case thumbnailURL = "thumbnail_url"
+        case thumbnailUrl = "thumbnail_url"
         case succeed
         case issuedAt = "issued_at"
     }
