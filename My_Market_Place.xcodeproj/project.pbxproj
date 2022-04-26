@@ -25,6 +25,7 @@
 		48CB5550280D869F002C8676 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 48CB554E280D869F002C8676 /* Main.storyboard */; };
 		48CB5552280D86A0002C8676 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 48CB5551280D86A0002C8676 /* Assets.xcassets */; };
 		48CB5555280D86A0002C8676 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 48CB5553280D86A0002C8676 /* LaunchScreen.storyboard */; };
+		48E5635D2817F86000CB17DF /* ModifiyProductRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48E5635C2817F86000CB17DF /* ModifiyProductRequest.swift */; };
 		B4A1F5F6F584A466EC167ED7 /* Pods_My_Market_Place.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C0F13CAB3773C33F0A8F7AFC /* Pods_My_Market_Place.framework */; };
 /* End PBXBuildFile section */
 
@@ -61,6 +62,7 @@
 		48CB5551280D86A0002C8676 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		48CB5554280D86A0002C8676 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		48CB5556280D86A0002C8676 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		48E5635C2817F86000CB17DF /* ModifiyProductRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModifiyProductRequest.swift; sourceTree = "<group>"; };
 		B5C455A842E812F6A1CCDF04 /* Pods-My_Market_Place.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-My_Market_Place.debug.xcconfig"; path = "Target Support Files/Pods-My_Market_Place/Pods-My_Market_Place.debug.xcconfig"; sourceTree = "<group>"; };
 		C0F13CAB3773C33F0A8F7AFC /* Pods_My_Market_Place.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_My_Market_Place.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -148,6 +150,7 @@
 		484413832816833E005ADDB3 /* ModifyProduct */ = {
 			isa = PBXGroup;
 			children = (
+				48E5635C2817F86000CB17DF /* ModifiyProductRequest.swift */,
 			);
 			path = ModifyProduct;
 			sourceTree = "<group>";
@@ -367,6 +370,7 @@
 				48CB554D280D869F002C8676 /* ViewController.swift in Sources */,
 				4844138928168463005ADDB3 /* ProductList.swift in Sources */,
 				484413972817E845005ADDB3 /* ProductDetail.swift in Sources */,
+				48E5635D2817F86000CB17DF /* ModifiyProductRequest.swift in Sources */,
 				4844138B2816846C005ADDB3 /* ProductPreview.swift in Sources */,
 				484413872816844C005ADDB3 /* ProductListRequest.swift in Sources */,
 				48CB5549280D869F002C8676 /* AppDelegate.swift in Sources */,
