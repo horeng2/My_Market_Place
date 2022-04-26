@@ -12,6 +12,10 @@
 		4844138928168463005ADDB3 /* ProductList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4844138828168463005ADDB3 /* ProductList.swift */; };
 		4844138B2816846C005ADDB3 /* ProductPreview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4844138A2816846C005ADDB3 /* ProductPreview.swift */; };
 		4844138D281686DB005ADDB3 /* Currency.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4844138C281686DB005ADDB3 /* Currency.swift */; };
+		4844138F2817E2BA005ADDB3 /* RegistProductRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4844138E2817E2BA005ADDB3 /* RegistProductRequest.swift */; };
+		484413912817E2CD005ADDB3 /* ProductParam.swift in Sources */ = {isa = PBXBuildFile; fileRef = 484413902817E2CD005ADDB3 /* ProductParam.swift */; };
+		484413932817E363005ADDB3 /* Image.swift in Sources */ = {isa = PBXBuildFile; fileRef = 484413922817E363005ADDB3 /* Image.swift */; };
+		484413952817E527005ADDB3 /* RegistImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 484413942817E527005ADDB3 /* RegistImage.swift */; };
 		48C13014280D8E1D005835EE /* .swiftlint.yml in Resources */ = {isa = PBXBuildFile; fileRef = 48C13013280D8E1D005835EE /* .swiftlint.yml */; };
 		48CB5549280D869F002C8676 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48CB5548280D869F002C8676 /* AppDelegate.swift */; };
 		48CB554B280D869F002C8676 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48CB554A280D869F002C8676 /* SceneDelegate.swift */; };
@@ -40,6 +44,10 @@
 		4844138828168463005ADDB3 /* ProductList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductList.swift; sourceTree = "<group>"; };
 		4844138A2816846C005ADDB3 /* ProductPreview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductPreview.swift; sourceTree = "<group>"; };
 		4844138C281686DB005ADDB3 /* Currency.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Currency.swift; sourceTree = "<group>"; };
+		4844138E2817E2BA005ADDB3 /* RegistProductRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistProductRequest.swift; sourceTree = "<group>"; };
+		484413902817E2CD005ADDB3 /* ProductParam.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductParam.swift; sourceTree = "<group>"; };
+		484413922817E363005ADDB3 /* Image.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Image.swift; sourceTree = "<group>"; };
+		484413942817E527005ADDB3 /* RegistImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistImage.swift; sourceTree = "<group>"; };
 		48C13013280D8E1D005835EE /* .swiftlint.yml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = .swiftlint.yml; sourceTree = "<group>"; };
 		48CB5545280D869F002C8676 /* My_Market_Place.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = My_Market_Place.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		48CB5548280D869F002C8676 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -106,6 +114,7 @@
 			isa = PBXGroup;
 			children = (
 				4844138C281686DB005ADDB3 /* Currency.swift */,
+				484413922817E363005ADDB3 /* Image.swift */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -123,6 +132,9 @@
 		4844138228168334005ADDB3 /* RegistProduct */ = {
 			isa = PBXGroup;
 			children = (
+				4844138E2817E2BA005ADDB3 /* RegistProductRequest.swift */,
+				484413902817E2CD005ADDB3 /* ProductParam.swift */,
+				484413942817E527005ADDB3 /* RegistImage.swift */,
 			);
 			path = RegistProduct;
 			sourceTree = "<group>";
@@ -351,8 +363,12 @@
 				4844138B2816846C005ADDB3 /* ProductPreview.swift in Sources */,
 				484413872816844C005ADDB3 /* ProductListRequest.swift in Sources */,
 				48CB5549280D869F002C8676 /* AppDelegate.swift in Sources */,
+				4844138F2817E2BA005ADDB3 /* RegistProductRequest.swift in Sources */,
+				484413912817E2CD005ADDB3 /* ProductParam.swift in Sources */,
+				484413952817E527005ADDB3 /* RegistImage.swift in Sources */,
 				4844138D281686DB005ADDB3 /* Currency.swift in Sources */,
 				48CB554B280D869F002C8676 /* SceneDelegate.swift in Sources */,
+				484413932817E363005ADDB3 /* Image.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
