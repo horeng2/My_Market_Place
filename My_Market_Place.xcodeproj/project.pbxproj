@@ -28,6 +28,8 @@
 		48E5635D2817F86000CB17DF /* ModifiyProductRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48E5635C2817F86000CB17DF /* ModifiyProductRequest.swift */; };
 		48E5635F2819794500CB17DF /* DeleteProductRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48E5635E2819794500CB17DF /* DeleteProductRequest.swift */; };
 		48E5636128197A4A00CB17DF /* VendorSecretKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48E5636028197A4A00CB17DF /* VendorSecretKey.swift */; };
+		48E563662819801A00CB17DF /* URLSessionProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48E563652819801A00CB17DF /* URLSessionProvider.swift */; };
+		48E563692819840000CB17DF /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48E563682819840000CB17DF /* NetworkError.swift */; };
 		B4A1F5F6F584A466EC167ED7 /* Pods_My_Market_Place.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C0F13CAB3773C33F0A8F7AFC /* Pods_My_Market_Place.framework */; };
 /* End PBXBuildFile section */
 
@@ -67,6 +69,8 @@
 		48E5635C2817F86000CB17DF /* ModifiyProductRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModifiyProductRequest.swift; sourceTree = "<group>"; };
 		48E5635E2819794500CB17DF /* DeleteProductRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeleteProductRequest.swift; sourceTree = "<group>"; };
 		48E5636028197A4A00CB17DF /* VendorSecretKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VendorSecretKey.swift; sourceTree = "<group>"; };
+		48E563652819801A00CB17DF /* URLSessionProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLSessionProvider.swift; sourceTree = "<group>"; };
+		48E563682819840000CB17DF /* NetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
 		B5C455A842E812F6A1CCDF04 /* Pods-My_Market_Place.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-My_Market_Place.debug.xcconfig"; path = "Target Support Files/Pods-My_Market_Place/Pods-My_Market_Place.debug.xcconfig"; sourceTree = "<group>"; };
 		C0F13CAB3773C33F0A8F7AFC /* Pods_My_Market_Place.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_My_Market_Place.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -115,7 +119,6 @@
 				4844138228168334005ADDB3 /* RegistProduct */,
 				484413832816833E005ADDB3 /* ModifyProduct */,
 				4844138528168354005ADDB3 /* DeleteProduct */,
-				4844138428168349005ADDB3 /* Secret */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -159,13 +162,6 @@
 			path = ModifyProduct;
 			sourceTree = "<group>";
 		};
-		4844138428168349005ADDB3 /* Secret */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Secret;
-			sourceTree = "<group>";
-		};
 		4844138528168354005ADDB3 /* DeleteProduct */ = {
 			isa = PBXGroup;
 			children = (
@@ -199,7 +195,7 @@
 		48CB5547280D869F002C8676 /* My_Market_Place */ = {
 			isa = PBXGroup;
 			children = (
-				4844137F28168316005ADDB3 /* Model */,
+				48E56367281983EA00CB17DF /* Network */,
 				48CB5548280D869F002C8676 /* AppDelegate.swift */,
 				48CB554A280D869F002C8676 /* SceneDelegate.swift */,
 				48CB554C280D869F002C8676 /* ViewController.swift */,
@@ -207,8 +203,18 @@
 				48CB5551280D86A0002C8676 /* Assets.xcassets */,
 				48CB5553280D86A0002C8676 /* LaunchScreen.storyboard */,
 				48CB5556280D86A0002C8676 /* Info.plist */,
+				4844137F28168316005ADDB3 /* Model */,
 			);
 			path = My_Market_Place;
+			sourceTree = "<group>";
+		};
+		48E56367281983EA00CB17DF /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				48E563652819801A00CB17DF /* URLSessionProvider.swift */,
+				48E563682819840000CB17DF /* NetworkError.swift */,
+			);
+			path = Network;
 			sourceTree = "<group>";
 		};
 		E5346C21552F6BB1343C0A6E /* Frameworks */ = {
@@ -387,6 +393,8 @@
 				484413992817E8C1005ADDB3 /* Vendor.swift in Sources */,
 				4844138D281686DB005ADDB3 /* Currency.swift in Sources */,
 				48E5636128197A4A00CB17DF /* VendorSecretKey.swift in Sources */,
+				48E563662819801A00CB17DF /* URLSessionProvider.swift in Sources */,
+				48E563692819840000CB17DF /* NetworkError.swift in Sources */,
 				48CB554B280D869F002C8676 /* SceneDelegate.swift in Sources */,
 				484413932817E363005ADDB3 /* Image.swift in Sources */,
 			);
