@@ -8,9 +8,9 @@
 import Foundation
 
 class URLSessionProvider {
-    let session: URLSession
+    let session: URLSessionProtocol
 
-    init(session: URLSession = URLSession.shared) {
+    init(session: URLSessionProtocol = URLSession.shared) {
         self.session = session
     }
 
@@ -30,7 +30,7 @@ class URLSessionProvider {
         }
         task.resume()
     }
-    
+
     func getData(
         requestType: String,
         completionHandler: @escaping (Result<Data, NetworkError>) -> Void
@@ -40,7 +40,7 @@ class URLSessionProvider {
         }
         var request = URLRequest(url: url)
         request.httpMethod = "GET"
-        
+
         dataTask(request: request, completionHandler: completionHandler)
     }
 }

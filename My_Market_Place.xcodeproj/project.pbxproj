@@ -18,6 +18,8 @@
 		484413952817E527005ADDB3 /* RegistImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 484413942817E527005ADDB3 /* RegistImage.swift */; };
 		484413972817E845005ADDB3 /* ProductDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 484413962817E845005ADDB3 /* ProductDetail.swift */; };
 		484413992817E8C1005ADDB3 /* Vendor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 484413982817E8C1005ADDB3 /* Vendor.swift */; };
+		488C36D2281EB844005BA035 /* URLSessionProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 488C36D1281EB844005BA035 /* URLSessionProtocol.swift */; };
+		488C36D4281EC0BF005BA035 /* MockURLSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 488C36D3281EC0BF005BA035 /* MockURLSession.swift */; };
 		48C13014280D8E1D005835EE /* .swiftlint.yml in Resources */ = {isa = PBXBuildFile; fileRef = 48C13013280D8E1D005835EE /* .swiftlint.yml */; };
 		48CB5549280D869F002C8676 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48CB5548280D869F002C8676 /* AppDelegate.swift */; };
 		48CB554B280D869F002C8676 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48CB554A280D869F002C8676 /* SceneDelegate.swift */; };
@@ -57,6 +59,8 @@
 		484413942817E527005ADDB3 /* RegistImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistImage.swift; sourceTree = "<group>"; };
 		484413962817E845005ADDB3 /* ProductDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductDetail.swift; sourceTree = "<group>"; };
 		484413982817E8C1005ADDB3 /* Vendor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Vendor.swift; sourceTree = "<group>"; };
+		488C36D1281EB844005BA035 /* URLSessionProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLSessionProtocol.swift; sourceTree = "<group>"; };
+		488C36D3281EC0BF005BA035 /* MockURLSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockURLSession.swift; sourceTree = "<group>"; };
 		48C13013280D8E1D005835EE /* .swiftlint.yml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = .swiftlint.yml; sourceTree = "<group>"; };
 		48CB5545280D869F002C8676 /* My_Market_Place.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = My_Market_Place.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		48CB5548280D869F002C8676 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -213,6 +217,8 @@
 			children = (
 				48E563652819801A00CB17DF /* URLSessionProvider.swift */,
 				48E563682819840000CB17DF /* NetworkError.swift */,
+				488C36D1281EB844005BA035 /* URLSessionProtocol.swift */,
+				488C36D3281EC0BF005BA035 /* MockURLSession.swift */,
 			);
 			path = Network;
 			sourceTree = "<group>";
@@ -380,6 +386,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				48CB554D280D869F002C8676 /* ViewController.swift in Sources */,
+				488C36D2281EB844005BA035 /* URLSessionProtocol.swift in Sources */,
 				4844138928168463005ADDB3 /* ProductList.swift in Sources */,
 				48E5635F2819794500CB17DF /* DeleteProductRequest.swift in Sources */,
 				484413972817E845005ADDB3 /* ProductDetail.swift in Sources */,
@@ -389,6 +396,7 @@
 				48CB5549280D869F002C8676 /* AppDelegate.swift in Sources */,
 				4844138F2817E2BA005ADDB3 /* RegistProductRequest.swift in Sources */,
 				484413912817E2CD005ADDB3 /* ProductParam.swift in Sources */,
+				488C36D4281EC0BF005BA035 /* MockURLSession.swift in Sources */,
 				484413952817E527005ADDB3 /* RegistImage.swift in Sources */,
 				484413992817E8C1005ADDB3 /* Vendor.swift in Sources */,
 				4844138D281686DB005ADDB3 /* Currency.swift in Sources */,
