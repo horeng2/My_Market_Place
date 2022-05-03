@@ -6,27 +6,43 @@
 //
 
 import XCTest
+@testable import My_Market_Place
 
 class My_Market_Place_Tests: XCTestCase {
+    let mockSession = MockURLSession()
+    var sut: URLSessionProvider!
 
     override func setUpWithError() throws {
-        // Put setup code here. This method is called before the invocation of each test method in the class.
+        self.sut = .init(session: mockSession)
     }
 
-    override func tearDownWithError() throws {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
-    }
+    func test_getData_success() {
+        let response = try? JSONDecoder().decode(ProductList.self, from: MockData().data)
 
-    func testExample() throws {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
-    }
-
-    func testPerformanceExample() throws {
-        // This is an example of a performance test case.
-        measure {
-            // Put the code you want to measure the time of here.
+        sut.getProductListData(requestType: ProductListRequest(pageNumber: 1, rowCountInPage: 1)) { result in
+            switch result {
+            case .success(let data):
+                guard let list = try? JSONDecoder().decode(ProductList.self, from: data) else {
+                    XCTFail("decode error")
+                    return
+                }
+                XCTAssertEqual(list.pageNumber, response?.pageNumber)
+            case .failure:
+                XCTFail("getData failure")
+            }
         }
     }
 
+    func test_getData_failure() {
+        sut = URLSessionProvider(session: MockURLSession(isRequestSuccess: false))
+
+        sut.getProductListData(requestType: ProductListRequest(pageNumber: 1, rowCountInPage: 1)) { result in
+            switch result {
+            case .success:
+                XCTFail("result is success")
+            case .failure(let error):
+                XCTAssertEqual(error, NetworkError.statusCodeError)
+            }
+        }
+    }
 }

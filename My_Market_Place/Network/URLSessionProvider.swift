@@ -9,6 +9,7 @@ import Foundation
 
 class URLSessionProvider {
     let session: URLSessionProtocol
+    let apiHost =  "https://market-training.yagom-academy.kr/"
 
     init(session: URLSessionProtocol = URLSession.shared) {
         self.session = session
@@ -31,11 +32,11 @@ class URLSessionProvider {
         task.resume()
     }
 
-    func getData(
-        requestType: String,
+    func getProductListData(
+        requestType: ProductListRequest,
         completionHandler: @escaping (Result<Data, NetworkError>) -> Void
     ) {
-        guard let url = URL(string: requestType) else {
+        guard let url = URL(string: apiHost) else {
             return completionHandler(.failure(NetworkError.wrongURL))
         }
         var request = URLRequest(url: url)

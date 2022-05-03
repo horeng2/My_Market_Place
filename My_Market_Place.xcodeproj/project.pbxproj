@@ -217,8 +217,8 @@
 			children = (
 				48E563652819801A00CB17DF /* URLSessionProvider.swift */,
 				48E563682819840000CB17DF /* NetworkError.swift */,
-				488C36D1281EB844005BA035 /* URLSessionProtocol.swift */,
 				488C36D3281EC0BF005BA035 /* MockURLSession.swift */,
+				488C36D1281EB844005BA035 /* URLSessionProtocol.swift */,
 			);
 			path = Network;
 			sourceTree = "<group>";
