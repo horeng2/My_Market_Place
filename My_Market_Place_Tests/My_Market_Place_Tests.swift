@@ -17,9 +17,14 @@ class My_Market_Place_Tests: XCTestCase {
     }
 
     func test_getData_success() {
-        let response = try? JSONDecoder().decode(ProductList.self, from: MockData().data)
+        let response = try? JSONDecoder().decode(
+            ProductList.self,
+            from: MockData().data
+        )
 
-        sut.getProductListData(requestType: ProductListRequest(pageNumber: 1, rowCountInPage: 1)) { result in
+        sut.getProductListData(
+            requestType: ProductListRequest(pageNumber: 1, rowCountInPage: 1)
+        ) { result in
             switch result {
             case .success(let data):
                 guard let list = try? JSONDecoder().decode(ProductList.self, from: data) else {
@@ -36,7 +41,9 @@ class My_Market_Place_Tests: XCTestCase {
     func test_getData_failure() {
         sut = URLSessionProvider(session: MockURLSession(isRequestSuccess: false))
 
-        sut.getProductListData(requestType: ProductListRequest(pageNumber: 1, rowCountInPage: 1)) { result in
+        sut.getProductListData(
+            requestType: ProductListRequest(pageNumber: 1, rowCountInPage: 1)
+        ) { result in
             switch result {
             case .success:
                 XCTFail("result is success")
