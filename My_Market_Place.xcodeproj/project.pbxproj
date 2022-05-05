@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4814C814282400A5006F0116 /* CRUD.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4814C813282400A5006F0116 /* CRUD.swift */; };
 		483DEE80280D94FA00EBF77B /* My_Market_Place_Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 483DEE7F280D94FA00EBF77B /* My_Market_Place_Tests.swift */; };
 		484413872816844C005ADDB3 /* ProductListRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 484413862816844C005ADDB3 /* ProductListRequest.swift */; };
 		4844138928168463005ADDB3 /* ProductList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4844138828168463005ADDB3 /* ProductList.swift */; };
@@ -47,6 +48,7 @@
 
 /* Begin PBXFileReference section */
 		148EE5E24E2E5D074762F05A /* Pods-My_Market_Place.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-My_Market_Place.release.xcconfig"; path = "Target Support Files/Pods-My_Market_Place/Pods-My_Market_Place.release.xcconfig"; sourceTree = "<group>"; };
+		4814C813282400A5006F0116 /* CRUD.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CRUD.swift; sourceTree = "<group>"; };
 		483DEE7D280D94FA00EBF77B /* My_Market_Place_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = My_Market_Place_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		483DEE7F280D94FA00EBF77B /* My_Market_Place_Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = My_Market_Place_Tests.swift; sourceTree = "<group>"; };
 		484413862816844C005ADDB3 /* ProductListRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductListRequest.swift; sourceTree = "<group>"; };
@@ -199,6 +201,7 @@
 		48CB5547280D869F002C8676 /* My_Market_Place */ = {
 			isa = PBXGroup;
 			children = (
+				4844137F28168316005ADDB3 /* Model */,
 				48E56367281983EA00CB17DF /* Network */,
 				48CB5548280D869F002C8676 /* AppDelegate.swift */,
 				48CB554A280D869F002C8676 /* SceneDelegate.swift */,
@@ -207,7 +210,6 @@
 				48CB5551280D86A0002C8676 /* Assets.xcassets */,
 				48CB5553280D86A0002C8676 /* LaunchScreen.storyboard */,
 				48CB5556280D86A0002C8676 /* Info.plist */,
-				4844137F28168316005ADDB3 /* Model */,
 			);
 			path = My_Market_Place;
 			sourceTree = "<group>";
@@ -219,6 +221,7 @@
 				48E563682819840000CB17DF /* NetworkError.swift */,
 				488C36D3281EC0BF005BA035 /* MockURLSession.swift */,
 				488C36D1281EB844005BA035 /* URLSessionProtocol.swift */,
+				4814C813282400A5006F0116 /* CRUD.swift */,
 			);
 			path = Network;
 			sourceTree = "<group>";
@@ -409,6 +412,7 @@
 				48E5635F2819794500CB17DF /* DeleteProductRequest.swift in Sources */,
 				484413972817E845005ADDB3 /* ProductDetail.swift in Sources */,
 				48E5635D2817F86000CB17DF /* ModifiyProductRequest.swift in Sources */,
+				4814C814282400A5006F0116 /* CRUD.swift in Sources */,
 				4844138B2816846C005ADDB3 /* ProductPreview.swift in Sources */,
 				484413872816844C005ADDB3 /* ProductListRequest.swift in Sources */,
 				48CB5549280D869F002C8676 /* AppDelegate.swift in Sources */,

@@ -9,7 +9,7 @@ import Foundation
 
 class URLSessionProvider {
     let session: URLSessionProtocol
-    let apiHost =  "https://market-training.yagom-academy.kr/"
+    let apiHost = "https://market-training.yagom-academy.kr/"
 
     init(session: URLSessionProtocol = URLSession.shared) {
         self.session = session
