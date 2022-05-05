@@ -2,7 +2,7 @@
 
 - 기간: 2022. 04. 18. ~ 2022. 
 - 키워드
-  - `UIKit`
+  - `RxSwift`
   - `UICollectionView`
   - `UIAlertController`
   - `UIImagePicker`
@@ -28,7 +28,7 @@
 - 상품 클릭 시 상세페이지 조회
 
 ## 기술 스택
-- UIKit
+- RxSwift
 - MVVM 패턴
 - XCTest
 - URL Session
