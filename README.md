@@ -42,6 +42,7 @@
 # 진행 계획
 ## Step 0: UML작성 및 필요 기능 문서화
 ## Step 1: 모델 타입 구현
-## Step 2: 네트워크 구현 및 Unit Test
-## Step 3: 상품 목록 View 구현
-## Step 4: 상품 등록/수정 View 구현
+## Step 2: MockURLSession 구현 및 Unit Test
+## Step 3: Network 구현
+## Step 4: 상품 목록 View 구현
+## Step 5: 상품 등록/수정 View 구현
