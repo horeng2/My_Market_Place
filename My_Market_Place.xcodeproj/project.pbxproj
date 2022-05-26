@@ -117,6 +117,40 @@
 			path = My_Market_Place_Tests;
 			sourceTree = "<group>";
 		};
+		48408EB4283FB2C000B7BF5A /* App */ = {
+			isa = PBXGroup;
+			children = (
+				48CB5548280D869F002C8676 /* AppDelegate.swift */,
+				48CB554A280D869F002C8676 /* SceneDelegate.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		48408EB5283FB2DD00B7BF5A /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				48CB554E280D869F002C8676 /* Main.storyboard */,
+				48CB5551280D86A0002C8676 /* Assets.xcassets */,
+				48CB5553280D86A0002C8676 /* LaunchScreen.storyboard */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
+		48408EB6283FB2FF00B7BF5A /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				48CB554C280D869F002C8676 /* ViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		48408EB7283FB32400B7BF5A /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
 		4844137F28168316005ADDB3 /* Model */ = {
 			isa = PBXGroup;
 			children = (
@@ -201,15 +235,13 @@
 		48CB5547280D869F002C8676 /* My_Market_Place */ = {
 			isa = PBXGroup;
 			children = (
-				4844137F28168316005ADDB3 /* Model */,
-				48E56367281983EA00CB17DF /* Network */,
-				48CB5548280D869F002C8676 /* AppDelegate.swift */,
-				48CB554A280D869F002C8676 /* SceneDelegate.swift */,
-				48CB554C280D869F002C8676 /* ViewController.swift */,
-				48CB554E280D869F002C8676 /* Main.storyboard */,
-				48CB5551280D86A0002C8676 /* Assets.xcassets */,
-				48CB5553280D86A0002C8676 /* LaunchScreen.storyboard */,
 				48CB5556280D86A0002C8676 /* Info.plist */,
+				48408EB4283FB2C000B7BF5A /* App */,
+				48408EB5283FB2DD00B7BF5A /* Assets */,
+				48408EB6283FB2FF00B7BF5A /* ViewController */,
+				48408EB7283FB32400B7BF5A /* ViewModel */,
+				48E56367281983EA00CB17DF /* Network */,
+				4844137F28168316005ADDB3 /* Model */,
 			);
 			path = My_Market_Place;
 			sourceTree = "<group>";
