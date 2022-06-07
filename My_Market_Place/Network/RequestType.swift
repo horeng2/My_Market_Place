@@ -9,7 +9,7 @@ import Foundation
 
 enum RequestType {
     static let apiHost = "https://market-training.yagom-academy.kr/"
-    
+
     case healthChecker
     case getProductList(pageNumber: Int, itemCountInPage: Int)
     case getProductDetail(productID: Int)

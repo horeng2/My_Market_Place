@@ -1,15 +1,15 @@
 PODS:
-  - RxCocoa (5.1.3):
-    - RxRelay (~> 5)
-    - RxSwift (~> 5)
-  - RxRelay (5.1.3):
-    - RxSwift (~> 5)
-  - RxSwift (5.1.3)
-  - SwiftLint (0.46.5)
+  - RxCocoa (6.5.0):
+    - RxRelay (= 6.5.0)
+    - RxSwift (= 6.5.0)
+  - RxRelay (6.5.0):
+    - RxSwift (= 6.5.0)
+  - RxSwift (6.5.0)
+  - SwiftLint (0.47.1)
 
 DEPENDENCIES:
-  - RxCocoa (~> 5.1)
-  - RxSwift (~> 5.1)
+  - RxCocoa
+  - RxSwift
   - SwiftLint
 
 SPEC REPOS:
@@ -20,11 +20,11 @@ SPEC REPOS:
     - SwiftLint
 
 SPEC CHECKSUMS:
-  RxCocoa: e2ed092d5432e4296aa818021d27de4090ac0354
-  RxRelay: 5a18c2eb2d68326ebaf0112f80d837ae41b92b97
-  RxSwift: 915abbdfb62214aa89ccd0b194d44fb478019b27
-  SwiftLint: 2c16e8fa99dac2e440dc0c70ea74d2532048f6cf
+  RxCocoa: 94f817b71c07517321eb4f9ad299112ca8af743b
+  RxRelay: 1de1523e604c72b6c68feadedd1af3b1b4d0ecbd
+  RxSwift: 5710a9e6b17f3c3d6e40d6e559b9fa1e813b2ef8
+  SwiftLint: f80f1be7fa96d30e0aa68e58d45d4ea1ccaac519
 
-PODFILE CHECKSUM: f182d460980682c88caf06c93c314adfc4694d9c
+PODFILE CHECKSUM: 9193012e0de8ec6ed055095fc274bb934e8f948a
 
 COCOAPODS: 1.11.3
