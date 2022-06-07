@@ -21,7 +21,7 @@ enum RequestType {
     func url() -> String {
         switch self {
         case .healthChecker:
-            return "\(RequestType.apiHost)/healthChecker"
+            return "\(RequestType.apiHost)/\(self)"
         case .getProductList(let pageNumber, let itemCountInPage):
             return "\(RequestType.apiHost)/api/products?page_no=\(pageNumber)&items_per_page=\(itemCountInPage)"
         case .getProductDetail(let productID):

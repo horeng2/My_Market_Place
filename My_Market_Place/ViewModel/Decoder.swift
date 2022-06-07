@@ -9,10 +9,18 @@ import Foundation
 
 class Decoder {
     let decoder = JSONDecoder()
-    
-    func parsePageJSON(data: Data, type: RequestType.GetDataType) -> Result<ProductList?, NetworkError> {
+
+    func parseListJSON(data: Data) -> Result<ProductList, NetworkError> {
         let pageJSON: Data = data
         guard let decodedPageJSON = try? decoder.decode(ProductList.self, from: pageJSON) else {
+            return .failure(.parsingFailed)
+        }
+        return .success(decodedPageJSON)
+    }
+
+    func parseDetailJSON(data: Data) -> Result<ProductDetail, NetworkError> {
+        let pageJSON: Data = data
+        guard let decodedPageJSON = try? decoder.decode(ProductDetail.self, from: pageJSON) else {
             return .failure(.parsingFailed)
         }
         return .success(decodedPageJSON)
