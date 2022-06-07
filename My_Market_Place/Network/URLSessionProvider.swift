@@ -33,7 +33,7 @@ class URLSessionProvider {
     }
 
     func getProductListData(
-        requestType: ProductListRequest,
+        requestType: RequestType,
         completionHandler: @escaping (Result<Data, NetworkError>) -> Void
     ) {
         guard let url = URL(string: apiHost) else {

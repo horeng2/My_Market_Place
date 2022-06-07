@@ -23,7 +23,7 @@ class My_Market_Place_Tests: XCTestCase {
         )
 
         sut.getProductListData(
-            requestType: ProductListRequest(pageNumber: 1, rowCountInPage: 1)
+            requestType: RequestType.getProductList(pageNumber: 1, itemCountInPage: 1)
         ) { result in
             switch result {
             case .success(let data):
@@ -42,7 +42,7 @@ class My_Market_Place_Tests: XCTestCase {
         sut = URLSessionProvider(session: MockURLSession(isRequestSuccess: false))
 
         sut.getProductListData(
-            requestType: ProductListRequest(pageNumber: 1, rowCountInPage: 1)
+            requestType: RequestType.getProductList(pageNumber: 1, itemCountInPage: 1)
         ) { result in
             switch result {
             case .success:
