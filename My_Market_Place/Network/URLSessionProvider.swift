@@ -8,9 +8,9 @@
 import Foundation
 
 class URLSessionProvider {
-    let session: URLSessionProtocol
+    let session: URLSession
 
-    init(session: URLSessionProtocol = URLSession.shared) {
+    init(session: URLSession = URLSession.shared) {
         self.session = session
     }
 
@@ -24,7 +24,7 @@ class URLSessionProvider {
                       return completionHandler(.failure(.statusCodeError))
                   }
             guard let data = data else {
-                return completionHandler(.failure(.EmptyData))
+                return completionHandler(.failure(.emptyData))
             }
             completionHandler(.success(data))
         }

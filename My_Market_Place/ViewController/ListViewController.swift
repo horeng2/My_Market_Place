@@ -10,7 +10,7 @@ import UIKit
 class ListViewController: UIViewController {
     @IBOutlet private weak var listCollectionView: UICollectionView!
     @IBOutlet private weak var switchLayoutController: UISegmentedControl!
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
     }

@@ -10,7 +10,7 @@ import Foundation
 class ListViewModel {
     func loadData(completionHandler: @escaping (Result<ProductList, NetworkError>) -> Void) {
         let urlSessionProvider = URLSessionProvider()
-        
+
         urlSessionProvider.getData(requestType: .getProductList(pageNumber: 1, itemCountInPage: 20)) { result in
             switch result {
             case .success(let data):
@@ -18,16 +18,16 @@ class ListViewModel {
                     return
                 }
                 completionHandler(.success(parsedData))
-            case .failure(_):
+            case .failure:
                 return completionHandler(.failure(NetworkError.emptyData))
             }
         }
     }
-    
+
     private func getParsedData(data: Data) -> ProductList? {
         let decoder = Decoder()
-        var parsedData: ProductList? = nil
-        
+        var parsedData: ProductList?
+
         let result = decoder.parseListJSON(data: data)
         switch result {
         case .success(let data):
