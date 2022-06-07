@@ -9,7 +9,7 @@ import XCTest
 @testable import My_Market_Place
 
 class My_Market_Place_Tests: XCTestCase {
-    let mockSession = MockURLSession()
+    let mockSession = URLSession()
     var sut: URLSessionProvider!
 
     override func setUpWithError() throws {
@@ -22,7 +22,7 @@ class My_Market_Place_Tests: XCTestCase {
             from: MockData().data
         )
 
-        sut.getProductListData(
+        sut.getData(
             requestType: RequestType.getProductList(pageNumber: 1, itemCountInPage: 1)
         ) { result in
             switch result {
@@ -41,7 +41,7 @@ class My_Market_Place_Tests: XCTestCase {
     func test_getData_failure() {
         sut = URLSessionProvider(session: MockURLSession(isRequestSuccess: false))
 
-        sut.getProductListData(
+        sut.getData(
             requestType: RequestType.getProductList(pageNumber: 1, itemCountInPage: 1)
         ) { result in
             switch result {

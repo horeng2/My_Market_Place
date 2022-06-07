@@ -9,7 +9,6 @@ import Foundation
 
 class URLSessionProvider {
     let session: URLSessionProtocol
-    let apiHost = "https://market-training.yagom-academy.kr/"
 
     init(session: URLSessionProtocol = URLSession.shared) {
         self.session = session
@@ -58,12 +57,31 @@ class URLSessionProvider {
         request.httpMethod = "POST"
         request.setValue("multipart/form-data; boundary=\(boundary)", forHTTPHeaderField: "Content-Type")
         request.addValue("f4363f92-71e8-11ec-abfa-17aac326b73f", forHTTPHeaderField: "identifier")
-//        request.httpBody = createBody(parameters: parameters, boundary: boundary, images: registImages)
+        request.httpBody = createBody(parameters: parameters, boundary: boundary, images: registImages)
 
         dataTask(request: request, completionHandler: completionHandler)
     }
 
-//    func createBody(parameters: ProductParam, boundary: String, images: [Data]) -> Data {
-//
-//    }
+    func createBody(parameters: ProductParam, boundary: String, images: [Data]) -> Data {
+        var body = Data()
+
+        guard let value = try? JSONEncoder().encode(parameters) else {
+            return Data()
+        }
+        let boundaryPrefix = "--\(boundary)\r\n"
+
+        body.append(Data(boundaryPrefix.utf8))
+        body.append(Data("Content-Disposition: form-data; name=\"params\"\r\n".utf8))
+        body.append(Data("Content-Type: application/json\r\n".utf8))
+        body.append(Data("\r\n\(value)\r\n".utf8))
+
+        for image in images {
+            body.append(Data(boundaryPrefix.utf8))
+            body.append(Data("Content-Disposition: form-data; name=\"images\"; filename=\"\(UUID().uuidString).jpeg\"\r\n".utf8))
+            body.append(Data("Content-Type: image/jpeg)\r\n".utf8))
+            body.append(Data("\r\n\(image)\r\n".utf8))
+        }
+        body.append(Data("--\(boundary)--\r\n".utf8))
+        return body
+    }
 }
