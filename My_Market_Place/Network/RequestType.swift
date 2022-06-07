@@ -17,9 +17,9 @@ enum RequestType {
     case patchProduct(productID: Int)
     case postProductVendorSecret(productID: Int)
     case deleteProduct(productID: Int, productSecretKey: Int)
-    
-    func url(for type: RequestType) -> String {
-        switch type {
+
+    func url() -> String {
+        switch self {
         case .healthChecker:
             return "\(RequestType.apiHost)/healthChecker"
         case .getProductList(let pageNumber, let itemCountInPage):
